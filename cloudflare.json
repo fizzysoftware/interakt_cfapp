@@ -1,33 +1,25 @@
 {
-    "main":"public/javascripts/countersback.js",
-    "name":"Counters Back",
-    "description": "A sample CloudFlare application that brings counters back",
-    "version": "0.0.5b",
-    "category": "analytics",
+    "main":"public/javascripts/interakt.js",
+    "name":"Interakt",
+    "description": "Provides integration of your website with Interakt application",
+    "contributors":[
+        {
+                "name":"Dhiraj Bajaj",
+                "email":"dhiraj@fizzysoftware.com"
+        }
+    ],
+    "version": "1.0.0",
+    "category": "Customer Engagement and Retention",
     "account": {
-        "callback_url": "http://countersback.herokuapp.com/api",
-        "user_fields": ["email"]
-    },
-    "billing": {
-        "type": "zone",
-        "plans":[
-            {
-                "name" : "Chowder",
-                "price": "3.20"
-            },
-            {
-                "name" : "Minestrone",
-                "price" : "6.55"
-            }
-        ]
+        "callback_url": "http://interakt.co/cloudfare/install",
+        "user_fields": ["email", "name", "website"]
     },
     "config":{
         "details":{
-            "Category": "CloudFlare App example",
             "Language": "English",
-            "Price": "Free to install.",
+            "Price": "Free",
             "Restrictions": "None",
-            "CloudFlare": "<a href='http://www.cloudflare.com/terms' target='_blank'>Terms of use</a>"
+            "TOS":"http://interakt.co/terms"
         },
         "assets":{
             "logos" : {
@@ -35,35 +27,26 @@
                 "132px": "./public/images/logo-132.png"
             },
             "detail_page" : [
-                "./public/images/example.png"
+                "./public/images/cf-interakt-Banner.jpg"
             ],
             "images" : [
-                "./public/images/counter.png"
+                "./public/images/Interakt-banner.jpg"
             ]
         },
         "interface": [
             {
                 "type": "string",
-                "name": "Favorite Food",
-                "description": "Please tell us your favorite food.",
-                "id": "food",
+                "name": "Name",
+                "description": "Your Full Name",
+                "id": "name",
                 "domain_request": true
             },
             {
-                "id": "lottery",
-                "type": "select",
-                "name": "Do you Lotto?",
-                "description": "Choose whether to buy a ticket",
-                "options": [
-                    {
-                        "label": "Yes, buy a ticket!",
-                        "value": "true"
-                    },
-                    {
-                        "label": "No, I am scared.",
-                        "value": ""
-                    }
-                ]
+                "type": "string",
+                "name": "Website URL",
+                "description": "Please enter your website url.",
+                "id": "website",
+                "domain_request": true
             }
         ]
     }
