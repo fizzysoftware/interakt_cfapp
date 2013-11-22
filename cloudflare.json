@@ -1,15 +1,9 @@
 {
-    "main":"public/javascripts/interakt.js",
     "name":"Interakt",
     "description": "Provides integration of your website with Interakt application",
-    "contributors":[
-        {
-                "name":"Dhiraj Bajaj",
-                "email":"dhiraj@fizzysoftware.com"
-        }
-    ],
-    "version": "1.0.0",
-    "category": "Customer Engagement and Retention",
+    "version": "1.0",
+    "category": "analytics",
+    "main":"public/javascripts/interakt.js",
     "account": {
         "callback_url": "http://interakt.co/cloudfare/install",
         "user_fields": ["email", "name", "website"]
