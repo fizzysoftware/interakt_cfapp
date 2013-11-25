@@ -1,11 +1,11 @@
 {
     "name":"Interakt",
     "description": "Provides integration of your website with Interakt application",
-    "version": "1.0",
+    "version": "1.1",
     "category": "analytics",
     "main":"public/javascripts/interakt.js",
     "account": {
-        "callback_url": "http://interakt.co/cloudfare/install",
+        "callback_url": "http://interakt.co/cloudfare",
         "user_fields": ["email", "name", "website"]
     },
     "config":{
